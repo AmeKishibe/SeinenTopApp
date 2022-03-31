@@ -1,3 +1,5 @@
+
+
 <%= form_with(model: seinen) do |form| %>
   <% if seinen.errors.any? %>
     <div id="error_explanation">
@@ -10,9 +12,7 @@
       </ul>
     </div>
   <% end %>
-  <div class="Logo">
-    <h1>SeinenJump</h1>
-  </div>
+
   <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title %>
