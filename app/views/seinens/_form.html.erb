@@ -1,0 +1,32 @@
+<%= form_with(model: seinen) do |form| %>
+  <% if seinen.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(seinen.errors.count, "error") %> prohibited this seinen from being saved:</h2>
+
+      <ul>
+        <% seinen.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :article %>
+    <%= form.text_area :article %>
+  </div>
+
+  <div class="field">
+    <%= form.label :User_name %>
+    <%= form.text_field :User_name %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+class Seinen < ApplicationRecord
+end
