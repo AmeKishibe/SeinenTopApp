@@ -1,19 +1,22 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
+<p class="TitrePolice">
   <%= @seinen.title %>
 </p>
 
-<p>
-  <strong>Article:</strong>
-  <%= @seinen.article %>
-</p>
 
-<p>
-  <strong>Note:</strong>
-  <%= @seinen.User_name %>
-</p>
+<div class="article">
 
-<%= link_to 'Edit', edit_seinen_path(@seinen) %> |
-<%= link_to 'Back', seinens_path %>
+  <div class="description">
+    <%= @seinen.article %>
+  </div>
+  </br>
+  <div class="auteur">
+    <%= @seinen.User_name.upcase %>
+  </div>
+  </br>
+  <div class="ButtonShow">
+    <%= link_to 'Edit', edit_seinen_path(@seinen) %> |
+    <%= link_to 'Back', seinens_path %>
+  </div>
+</div>

@@ -11,3 +11,57 @@
  * It is generally better to create a new file per style scope.
  */
  @import "bootstrap";
+
+ // Place all the styles related to the Seinens controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+body {
+  background-color: #414F53;
+  color: #FFFFFF !important;
+  margin: 33px;
+  background-image: url(https://media.discordapp.net/attachments/888766860361883648/959050929305452604/Akirabg.png?width=1155&height=663);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+table {
+  color: pink;
+}
+.Logo{
+  display: flex;
+  justify-content: flex-end;
+  font-family: Six Caps;
+  font-size: 90px;
+  margin: auto;
+  top:0;
+}
+.TitrePolice{
+  font-family: Six Caps;
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+}
+.description{
+  display:flex;
+  justify-content: center;
+
+}
+.article{
+  display: table-row;
+  justify-content: left;
+}
+.auteur{
+  display:flex;
+  justify-content: left;
+}
+.buttonHome{
+  font-family: Montserrat;
+  font-size: 30px;
+}
+.ButtonShow{
+  text-decoration: none;
+  color: #9BC3CF;
+  font-weight: bold;
+}
