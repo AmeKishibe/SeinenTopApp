@@ -27,7 +27,7 @@ body {
   background-size: cover;
 }
 table {
-  color: pink;
+  color: rgb(255, 255, 255);
 }
 .Logo{
   display: flex;
@@ -51,17 +51,48 @@ table {
 .article{
   display: table-row;
   justify-content: left;
+  margin-left: 10px;
 }
 .auteur{
   display:flex;
   justify-content: left;
 }
-.buttonHome{
+.buttonHome a{
   font-family: Montserrat;
   font-size: 30px;
+  color : white;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
 }
+a :hover{
+  text-decoration: line-through;
+}
+
 .ButtonShow{
   text-decoration: none;
   color: #9BC3CF;
   font-weight: bold;
+}
+h1{
+  font-family: Six Caps;
+  font-size: 90px;
+
+}
+.LeSite{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  border-radius: 30px;
+  font-family: Montserrat;
+
+
+}
+
+
+.homeimg{
+  margin: 2%;
 }

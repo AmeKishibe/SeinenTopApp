@@ -6,7 +6,7 @@
 
 
 <div class="article">
-
+  <%= @seinen.notes.average(:value) %>
   <div class="description">
     <%= @seinen.article %>
   </div>
@@ -16,7 +16,7 @@
   </div>
   </br>
   <div class="ButtonShow">
-    <%= link_to 'Edit', edit_seinen_path(@seinen) %> |
-    <%= link_to 'Back', seinens_path %>
+    <%= link_to 'Modifier', edit_seinen_path(@seinen) %> |
+    <%= link_to 'Retour', seinens_path %>
   </div>
 </div>

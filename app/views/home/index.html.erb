@@ -1,4 +1,22 @@
-<h1>Welcom to the home page</h1>
-<div class="buttonHome">
-  <%= link_to "TOP SEINEN", "/seinens"%>
+<div class="Logo">
+  <h1>SeinenJump</h1>
 </div>
+<p id="notice"><%= notice %></p>
+
+
+
+
+  <div class="buttonHome">
+    <%= link_to "AVIS", "/seinens"%>
+    <%= link_to "NOTES", "/notes"%>
+  </div>
+
+  <div class="LeSite">
+  <div class="homeimg">
+    <%= image_tag("tenma.png", {:style => "width:200px;"}) %>
+    </div>
+    <div class="LeSiteText">
+      <h2>LE SITE</h2>
+      <p>Seinen Jump est une WebApp vous permettant de poster des avis et notes sur un ou plusieurs seinens. Comme vous, d’autres fans viendront poster des avis et notes et cela pourrait même vous donner envie de lire des œuvres encore inconnues de votre bibliothèque ! Pas de panique ! Aucune identification est requise, choisissez seulement un pseudonyme pour votre sécurité. </br> /!\ Aavant de supprimer un avis, veuillez supprimer la note qui lui est donnée.</p>
+    </div>
+  </div>

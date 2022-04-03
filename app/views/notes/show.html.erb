@@ -1,14 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Value:</strong>
+  <strong>Note sur 10:</strong>
   <%= @note.value %>
 </p>
 
 <p>
   <strong>Seinen:</strong>
+  <%= @note.seinen%>
+</p>
+
+<p>
+  <strong>Seinen ID:</strong>
   <%= @note.seinen_id %>
 </p>
 
-<%= link_to 'Edit', edit_note_path(@note) %> |
-<%= link_to 'Back', notes_path %>
+<%= link_to 'Modifier', edit_note_path(@note) %> |
+<%= link_to 'Retour', notes_path %>

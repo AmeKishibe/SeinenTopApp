@@ -50,6 +50,7 @@ class SeinensController < ApplicationController
   # DELETE /seinens/1 or /seinens/1.json
   def destroy
     @seinen.destroy
+    @notes.destroy
 
     respond_to do |format|
       format.html { redirect_to seinens_url, notice: "Seinen was successfully destroyed." }
